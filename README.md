@@ -1,8 +1,8 @@
 # 香港音游CheckMaiWay
 
-香港街機音樂遊戲地圖與出行檢查工具。網站針對香港可遊玩的街機音遊店舖，整理店舖位置、機種分類、營業時間、收藏、地圖連結，以及由主要口岸 / 西九龍高鐵站出發與返程的交通資訊。
+香港街機音樂遊戲地圖與出行檢查工具。網站針對香港可遊玩的街機音遊店舖，整理店舖位置、機種分類、營業時間、收藏、地圖連結，以及由主要口岸 / 西九龍高鐵站 / 香港國際機場出發與返程的交通資訊。
 
-目前版本：`v1.1.4`
+目前版本：`v1.1.5`
 
 網站：
 
@@ -21,6 +21,9 @@
 - 支援起點 / 終點選擇，估算去程交通費與理論最快路線時間。
 - 支援返程估算，並分開顯示口岸關閉紅線與港鐵末班車紅線。
 - 口岸紅線會預留至少 30 分鐘過關緩衝。
+- 如口岸關閉紅線早於港鐵末班車紅線，頁面只顯示最終有效的口岸紅線。
+- 香港國際機場起點會獨立顯示機場快線特別票價、普通港鐵接駁段票價及免費接駁條件。
+- 選定起點與店舖後，頁面會以港鐵線路色塊顯示相關路線。
 
 ## 機種分類
 
@@ -46,8 +49,9 @@ KONAMI 系：
 - 深圳灣口岸
 - 香園圍口岸
 - 港珠澳大橋香港口岸
+- 香港國際機場 / 機場快線機場站
 
-交通費、路線時間、末班車與口岸時間均為公開資料推算，實際出行請以港鐵、口岸及現場資訊為準。
+交通費、路線時間、末班車與口岸時間均為公開資料推算。香港國際機場不套用口岸關閉時間，只顯示返程港鐵 / 機場快線末班約束與機場快線班次提示。實際出行請以港鐵、口岸、機場及現場資訊為準。
 
 ## 資料來源
 
@@ -55,7 +59,7 @@ KONAMI 系：
 
 - BEMANI CN
 - Zenius-I-vanisher
-- MTR 官方 HRRoutes API
+- MTR 官方 HRRoutes API 與機場快線時間表
 - 香港入境事務處口岸辦公時間
 - 公開巴士票價資料
 - 公開社群與店舖備註資訊
@@ -79,9 +83,9 @@ KONAMI 系：
 
 # Hong Kong Otoge CheckMaiWay
 
-A mobile-friendly and desktop-friendly arcade rhythm game map for Hong Kong. The site collects arcade locations, game categories, opening hours, favorites, map links, and transport estimates from major border checkpoints and Hong Kong West Kowloon Station.
+A mobile-friendly and desktop-friendly arcade rhythm game map for Hong Kong. The site collects arcade locations, game categories, opening hours, favorites, map links, and transport estimates from major border checkpoints, Hong Kong West Kowloon Station, and Hong Kong International Airport.
 
-Current version: `v1.1.4`
+Current version: `v1.1.5`
 
 Live site:
 
@@ -100,6 +104,9 @@ Live site:
 - Origin / destination selector for estimated outbound fare and theoretical fastest route time.
 - Return-trip estimate with separate border checkpoint deadline and MTR last-train deadline.
 - Border checkpoint deadlines include at least a 30-minute clearance buffer.
+- If the border checkpoint closing deadline is earlier than the MTR last-train deadline, only the effective border deadline is shown.
+- Hong Kong International Airport shows Airport Express special fare, normal MTR connection fare, and free-connection conditions separately.
+- Selected origin / destination routes show MTR line badges with line reference colors.
 
 ## Game Categories
 
@@ -123,8 +130,9 @@ Filter behavior: all games are shown by default. Selecting one category switches
 - Shenzhen Bay Control Point
 - Heung Yuen Wai Control Point
 - Hong Kong-Zhuhai-Macao Bridge Hong Kong Port
+- Hong Kong International Airport / Airport Express Airport Station
 
-Fare, route time, last-train, and border checkpoint estimates are derived from public data and should be checked against official sources before travel.
+Fare, route time, last-train, and border checkpoint estimates are derived from public data. Hong Kong International Airport is not treated as a border checkpoint; it only shows the MTR / Airport Express last-train constraint and Airport Express frequency note. Check official sources before travel.
 
 ## Data Sources
 
@@ -132,7 +140,7 @@ Main sources include:
 
 - BEMANI CN
 - Zenius-I-vanisher
-- MTR official HRRoutes API
+- MTR official HRRoutes API and Airport Express timetable
 - Hong Kong Immigration Department control point opening hours
 - Public bus fare references
 - Public community and arcade notes
