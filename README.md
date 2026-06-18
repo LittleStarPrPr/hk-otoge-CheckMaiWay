@@ -2,7 +2,7 @@
 
 香港街機音樂遊戲地圖與出行檢查工具。網站針對香港可遊玩的街機音遊店舖，整理店舖位置、機種分類、營業時間、收藏、地圖連結，以及由主要口岸 / 西九龍高鐵站 / 香港國際機場出發與返程的交通資訊。
 
-目前版本：`v1.1.13`
+目前版本：`v1.1.14`
 
 網站：
 
@@ -20,6 +20,7 @@
 - 可收藏常去店舖，收藏資料儲存在本機瀏覽器。
 - 支援亮色與 OLED 純黑暗黑模式。
 - 支援起點 / 終點選擇，估算去程交通費與理論最快路線時間。
+- 起點與店舖距離較近時，會在港鐵 / 接駁候選與直接步行候選之間選擇較快路線；如步行較快，頁面會顯示步行路線而非強制繞港鐵。
 - 支援返程估算，並分開顯示口岸關閉紅線與港鐵末班車紅線。
 - 如目前路線模型包含口岸接駁巴士，會以獨立色塊顯示公交車線路、編號及參考票價，並計入總交通費；所有價格僅供參考。
 - 由最近港鐵站步行至終點店舖會以獨立色塊顯示，並提供步行時間估算。
@@ -88,7 +89,7 @@ KONAMI 系：
 
 A mobile-friendly and desktop-friendly arcade rhythm game map for Hong Kong. The site collects arcade locations, game categories, opening hours, favorites, map links, and transport estimates from major border checkpoints, Hong Kong West Kowloon Station, and Hong Kong International Airport.
 
-Current version: `v1.1.13`
+Current version: `v1.1.14`
 
 Live site:
 
@@ -106,6 +107,7 @@ Live site:
 - Local browser favorites for frequently visited arcades.
 - Light mode and OLED pure-black dark mode.
 - Origin / destination selector for estimated outbound fare and theoretical fastest route time.
+- For nearby origins and arcades, the route model compares MTR / feeder candidates with direct walking and shows walking when it is faster instead of forcing an MTR detour.
 - Return-trip estimate with separate border checkpoint deadline and MTR last-train deadline.
 - If the current route model includes a border feeder bus, the route number and reference fare are shown as a separate bus badge and included in the total transport fare; all prices are for reference only.
 - The final walking leg from the nearest MTR station to the arcade is shown as a separate walking badge with an estimated walking time.
